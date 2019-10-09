@@ -1,5 +1,5 @@
 # Interpretation of NWP model output - RCode
-This repository contains R code that I used for the data analysis part of my master's thesis which was about the interpretation of point forecasts as state-dependent functionals following the work of Patrick Schmidt (Interpretation of PointForecasts, 2019).
+This repository contains R code that I used for the data analysis part of my master's thesis which was about the interpretation of point forecasts as state-dependent functionals following the work of Patrick Schmidt (Interpretation of Point Forecasts, 2019).
 
 
 ## Preliminaries
