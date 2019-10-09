@@ -15,7 +15,7 @@ source('~/RCode/EstimateQuantiles.R')
 source('~/RCode/EstimateExpectiles.R')
 
 
-#Argumente lesen
+#read arguments
 args <- commandArgs(trailingOnly = TRUE)
 print(args)
 clustersize <- as.numeric(args[1])  #specifies number of nodes used in makeCluster below
@@ -37,7 +37,7 @@ cat("\n")
 print(files)
 cat("\n")
 
-##Apply EstimateQuantile and EstimateExpectiles to the current group of files
+##Apply EstimateQuantiles and EstimateExpectiles to the current group of files
 #Cluster
 cl <- makeCluster(clustersize, type = "MPI")
 clusterExport(cl,c('EstimateQuantiles', 'EstimateExpectiles'))
