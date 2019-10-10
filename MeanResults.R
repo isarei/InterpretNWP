@@ -5,7 +5,7 @@ library(tidyverse)
 ##Local
 #setwd('~/Documents/UNI/Master/Masterarbeit')
 ##Cluster
-setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998')
+setwd('~')
 
 
 #initialize new DataFrame
