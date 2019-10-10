@@ -6,9 +6,9 @@ library(PointFore)
 library(snow)
 library(Rmpi)
 
-#Directory
+#Directory ##Where all the data files are
 #setwd("/Users/isa/Documents/UNI/Master/Masterarbeit")
-setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/24')
+setwd('Daten')
 
 #Import
 source('~/RCode/EstimateQuantiles.R')
@@ -22,11 +22,6 @@ clustersize <- as.numeric(args[1])  #specifies number of nodes used in makeClust
 splittotal  <- as.numeric(args[2])  #specifies total number of data files
 splitpart   <- as.numeric(args[3])  #files a splitted into groups; specifies number of files in each group
 splitpartin <- as.numeric(args[4])  #specfies the group of files thats currently worked with(is a number from 1 to splittotal/splitpart) 
-
-#Files
-#files <- list.files('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/24')
-#weniger Files zum Testen
-#files <- files[200001:576000]
 
 #Take all files and then only the files in the current group
 files <- list.files()
