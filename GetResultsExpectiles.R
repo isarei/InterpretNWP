@@ -1,7 +1,7 @@
 GetResultsExpectiles <- function(coords = c(lon,lat)) {
   #the input argument is a vector of dimension 2, speciying a longitude and latitude coordinate
   #set working directory
-  setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998')
+  setwd('')
   
   #load packages
   library(car)
