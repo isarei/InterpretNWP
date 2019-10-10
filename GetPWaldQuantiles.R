@@ -3,7 +3,7 @@ GetPWaldQuantiles <- function(coords=c(lon,lat)){
   #input is vector of dimension 2 specifying coordinates
   #load packages and set workind directory
   library(car)
-  setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998')
+  setwd('~')
   
   lon <- coords[1]
   lat <- coords[2]
