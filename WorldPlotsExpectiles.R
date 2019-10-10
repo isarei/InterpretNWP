@@ -7,7 +7,7 @@ library(ggmap)
 library(ggplot2)
 library(Cairo)
 
-#directory
+#directory, load result file
 setwd('~/Documents/UNI/Master/Masterarbeit/Daten/Ergebnisse/ResultsCompleteInstrumentsLag2')
 load('Res_expectiles_mean16.Rdata')
 
