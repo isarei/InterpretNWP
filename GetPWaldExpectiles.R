@@ -3,7 +3,7 @@ GetPWaldExpectiles <- function(coords=c(lon,lat)){
   
   library(car)
   
-  setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998')
+  setwd('~')
   
   lon <- coords[1]
   lat <- coords[2]
