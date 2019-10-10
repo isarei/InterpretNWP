@@ -7,7 +7,6 @@ library(snow)
 library(Rmpi)
 
 #Directory ##Where all the data files are
-#setwd("/Users/isa/Documents/UNI/Master/Masterarbeit")
 setwd('Daten')
 
 #Import
