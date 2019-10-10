@@ -1,7 +1,7 @@
 EstimateExpectiles <- function(file) {
   #the argument file is a string specifying a file name of an .Rdata file
   #specify the working directory so that the data is accesable in the next step
-  setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998')
+  setwd('~')
   
   #load packages
   library(tidyverse)
