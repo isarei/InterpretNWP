@@ -24,7 +24,7 @@ Additionally, a file with meta-information was used that contained for each coor
 ### Computations
 
 #### EstimateFunctionalParallel.R
-Goes through all the files applying the functions EstimateQuantiles and EstimateExpectiles to each file.
+Goes through all the data files applying the functions EstimateQuantiles and EstimateExpectiles to each file.
 
 #### EstimateQuantiles.R / EstimateExpectiles.R
 Given a file name of an .Rdata file as described above, these functions apply the function EstimateFunction from the package PointFore to that file and save the output in a new .Rdata file.
