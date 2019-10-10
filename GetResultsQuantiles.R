@@ -2,7 +2,7 @@ GetResultsQuantiles <- function(coords = c(lon,lat)) {
   #see GetResultsExpectiles for more information (everything works analogously except 
   #for taking the result files generated with EstimateQuntiles instead of EstimateExpectiles)
   
-  setwd('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998')
+  setwd('~')
   library(car)
   
   lon <- coords[1]
