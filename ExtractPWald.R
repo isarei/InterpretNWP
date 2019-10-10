@@ -22,6 +22,6 @@ colnames(PWald_expectiles) <-c('PWald', 'lon', 'lat')
 colnames(PWald_quantiles) <-c('PWald', 'lon', 'lat')
 
 #save results as .Rdata
-save(PWald_expectiles, file = '/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Ergebnisse/PWaldExpectiles.Rdata')
-save(PWald_quantiles, file = '/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Ergebnisse/PWaldQuantiles.Rdata')
+save(PWald_expectiles, file = 'Daten/Ergebnisse/PWaldExpectiles.Rdata')
+save(PWald_quantiles, file = 'Daten/Ergebnisse/PWaldQuantiles.Rdata')
 
