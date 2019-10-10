@@ -31,5 +31,5 @@ colnames(res_expectiles) <- c('lon', 'lat', 'theta1', 'theta2', 'p_opt', #'p_wal
                                 's_mean', 's_ninety')
 
 #save the results as .Rdata
-save(res_quantiles, file = '/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Ergebnisse/Res_quantiles.Rdata')
-save(res_expectiles, file = '/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Ergebnisse/Res_expectiles.Rdata')
+save(res_quantiles, file = 'Daten/Ergebnisse/Res_quantiles.Rdata')
+save(res_expectiles, file = 'Daten/Ergebnisse/Res_expectiles.Rdata')
