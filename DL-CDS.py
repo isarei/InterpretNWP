@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import cdsapi
 
-c = cdsapi.Client(key='25322:b6861e18-2a7b-479a-9167-e2f7d5702ae1',url='https://cds.climate.copernicus.eu/api/v2')
+c = cdsapi.Client(key='',url='https://cds.climate.copernicus.eu/api/v2')
 
 c.retrieve(
     'reanalysis-era5-single-levels',
@@ -47,4 +47,4 @@ c.retrieve(
         ],
         'format':'netcdf'
     },
-    '/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Reanalyse/tp01012007_31122009.nc')
+    'path/tp01012007_31122009.nc')
