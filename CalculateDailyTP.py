@@ -7,7 +7,7 @@ from netCDF4 import Dataset
 
 
 ##WD
-os.chdir('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Reanalyse/')
+os.chdir('Daten/Reanalyse/')
 
 ##Inputfile: hourly precipitation data for some number of years.
 nc = netCDF4.Dataset('tp01012010_31122012.nc', 'r')
