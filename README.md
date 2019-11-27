@@ -14,6 +14,18 @@ This repository contains R code that I used for the data analysis part of my mas
     * map
     * ggmap
     + ggplot2
+* Python
+* Python packages used
+   * cdsapi
+   * numpy
+   * pandas
+   * os 
+   * sys 
+   * datetime
+   * netCDF4
+   * rpy2
+   * multiprocessign
+* cdo for merging netCDF files
 
 ## Data
 The data used had the formate .Rdata, i.e., a dataframe in R, which contained the data column-wise. Specifically, each file contained 24h-ahead precipitation forecasts for 4019 days and corresponding TRMM observations for one location. There were in total 576 000 files that covered the globe in a 0.25 times 0.25 degree grid from -50 to 50 degrees of latitude.
