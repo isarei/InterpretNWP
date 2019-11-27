@@ -21,7 +21,8 @@ from multiprocessing import Pool
 ##lon: Index from 0 to 1439, lat: Index from 0 to 399
 def combine_forecasts(lon,lat):
     #Save Forecast-file-names in 'files'
-    os.chdir('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/24Precip')
+    ##Directory where 24ahead daily precipitation forecasts are (can be in sepearate files for every month for instance)
+    os.chdir('/Daten/24PrecipForecasts')
     files = os.listdir()
     files.sort()
 
@@ -80,7 +81,7 @@ def get_forecasts(lon, lat, nc):
 ##Retrieves observation
 ##lon: Index von 0 bis 1439, lat index von 0 bis 399
 def get_obs(lon, lat):
-    os.chdir('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Reanalyse')
+    os.chdir('Daten/Reanalyse')
     nc = netCDF4.Dataset('TP_Reanalysis_summed_daily/daily_tp01012007_30122018.nc', 'r')
 
     #Convert dates; 3287: Take dates sinve 2007!!
@@ -124,8 +125,9 @@ def get_obs(lon, lat):
 ##Saves an R Data Frame with dates, lon, lat, HRES and OBS in it
 ##lon: Index from 0 to 1439, lat: Index from 0 to 399
 def combine_HRES_OBS(lon, lat):
-    os.chdir('/pfs/imk/imk-tro/Gruppe_Knippertz/bn1998/Daten/Reanalyse')
+    os.chdir('Daten/Reanalyse')
     ##Open netCDF file for getting a lat and lon vector in order to print coordinates and not indices in file name
+    ##File with daily total precipitation 
     nc = netCDF4.Dataset('TP_Reanalysis_summed_daily/daily_tp01012007_30122018.nc', 'r')
     #lats from -50 to 50
     lats = nc.variables['latitude'][:]
